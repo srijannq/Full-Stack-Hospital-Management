@@ -20,7 +20,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(fileUpload({ useTempFiles: true, tempFileDir: "/tmp/", debug: true }));
+app.use(fileUpload({ useTempFiles: true, tempFileDir: "/tmp/" }));
 
 app.use("/api/v1/message", messageRouter);
 app.use("/api/v1/user", userRouter);
